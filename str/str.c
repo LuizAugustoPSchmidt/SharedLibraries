@@ -1,5 +1,15 @@
 #include "str.h"
 
+int strsubst(char* str, const char* oldsubstr, const char* newsubstr){
+  // This function has a really clear problem: it may write to a forbidden address. Maybe I can fix it 
+  // with a few 'if' statements
+  char *aux;
+  while((aux = strstr(str, oldsubstr)) != NULL){
+    memmove(aux + strlen(newsubstr), aux + strlen(oldsubstr), strlen(aux + strlen(oldsubstr)));
+  }
+  return strlen(str);
+}
+
 int streq(const char* str1, const char* str2){
   return (strcmp(str1, str2) == 0);
 }
