@@ -3,9 +3,13 @@
 int strsubst(char* str, const char* oldsubstr, const char* newsubstr){
   // This function has a really clear problem: it may write to a forbidden address. Maybe I can fix it 
   // with a few 'if' statements
+  if(!(str && oldsubstr && newsubstr)){
+    return -1;
+  }
   char *aux;
   while((aux = strstr(str, oldsubstr)) != NULL){
-    memmove(aux + strlen(newsubstr), aux + strlen(oldsubstr), strlen(aux + strlen(oldsubstr)));
+    memmove(aux + strlen(newsubstr), aux + strlen(oldsubstr), strlen(aux + strlen(oldsubstr)) + 1);
+    memcpy(aux, newsubstr, strlen(newsubstr));
   }
   return strlen(str);
 }
