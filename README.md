@@ -19,3 +19,5 @@ How to install a shared library to system:
         Ex.: ldconfig
    
 Then, remember to update your C_INCLUDE_PATH and LD_LIBRARY_PATH to include /usr/lib/
+
+Also, remember to use <brick.h> in every single one of your projects
