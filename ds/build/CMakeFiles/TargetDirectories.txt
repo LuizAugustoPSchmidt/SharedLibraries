@@ -1,0 +1,3 @@
+/home/luiz/Documents/headers/ds/build/CMakeFiles/DataStructures.dir
+/home/luiz/Documents/headers/ds/build/CMakeFiles/edit_cache.dir
+/home/luiz/Documents/headers/ds/build/CMakeFiles/rebuild_cache.dir

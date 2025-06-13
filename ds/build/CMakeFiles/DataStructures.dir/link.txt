@@ -1,0 +1,1 @@
+/usr/bin/cc  -Wall -Wextra CMakeFiles/DataStructures.dir/src/example.c.o CMakeFiles/DataStructures.dir/src/inner.c.o -o DataStructures  -lerrors

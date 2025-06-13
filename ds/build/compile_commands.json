@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/luiz/Documents/headers/ds/build",
+  "command": "/usr/bin/cc  -I/home/luiz/Documents/headers/ds/includes  -Wall -Wextra -o CMakeFiles/DataStructures.dir/src/example.c.o -c /home/luiz/Documents/headers/ds/src/example.c",
+  "file": "/home/luiz/Documents/headers/ds/src/example.c",
+  "output": "CMakeFiles/DataStructures.dir/src/example.c.o"
+},
+{
+  "directory": "/home/luiz/Documents/headers/ds/build",
+  "command": "/usr/bin/cc  -I/home/luiz/Documents/headers/ds/includes  -Wall -Wextra -o CMakeFiles/DataStructures.dir/src/inner.c.o -c /home/luiz/Documents/headers/ds/src/inner.c",
+  "file": "/home/luiz/Documents/headers/ds/src/inner.c",
+  "output": "CMakeFiles/DataStructures.dir/src/inner.c.o"
+}
+]
