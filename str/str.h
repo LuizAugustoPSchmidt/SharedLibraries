@@ -19,16 +19,11 @@
 
 typedef struct string {
     size_t length, capacity;
-    char *str;
+    char* str;
 } string;
 
-bool substrcontains(const char *base, const char *tar);
-int purgechar(char *str, const size_t len, const char tar);
-int streq(const char *str1, const char *str2);
-int strpurge(char *str, const char *tar);
-int strsubst(char *str, const char *oldsubstr, const char *newsubstr);
-int countoccurs(char *base, const char *tar);
-
-string StrNew(char *ptr);
+string StrNew(char* ptr);
 string StrConcat(string a, string b);
-string StrReplace(string base, const char *tar, const char *new);
+string StrReplace(string base, const char* tar, const char* new);
+
+bool StrEq(const string a, const string b);
